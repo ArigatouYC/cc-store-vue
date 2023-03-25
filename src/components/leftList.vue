@@ -3,7 +3,9 @@
     <ul v-for="item in 13" :key="item">
       <li>
         <a href="#">手机/数码/电器</a>
-            <HoverList></HoverList>
+        <div class="insideList">
+          <HoverList class="enter-active"></HoverList>
+        </div>
       </li>
     </ul>
   </div>
@@ -12,11 +14,11 @@
 <script>
 import "animate.css";
 
-import HoverList from './hoverList.vue'
+import HoverList from "./hoverList.vue";
 
 export default {
   name: "leftList",
-  components: {HoverList},
+  components: { HoverList },
   data() {
     return {};
   },
@@ -50,4 +52,16 @@ export default {
 }
 
 
+.enter-active{
+  animation: anm 0.3s;
+}
+
+@keyframes anm {
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
 </style>
