@@ -1,13 +1,43 @@
 <template>
   <div>
+    <TopNav></TopNav>
+    <LogoAndSearch></LogoAndSearch>
+    <TopSwitchMenu></TopSwitchMenu>
+    <div class="wrapper">
+      <LeftList></LeftList>
+      <Swiper></Swiper>
+      <RightContent></RightContent>
+    </div>
+    <Seckill></Seckill>
+    <Jydq></Jydq>
+    <Jydq></Jydq>
+    <Copyright></Copyright>
   </div>
 </template>
 
 <script>
+import TopNav from "../components/topNav";
+import LogoAndSearch from "../components/logoAndSearch.vue";
+import TopSwitchMenu from "../components/topSwitchMenu.vue";
+import LeftList from "../components/leftList.vue";
+import Swiper from "../components/swiper.vue";
+import RightContent from "../components/rightContent.vue";
+import Seckill from "../components/seckill.vue";
+import Jydq from "../components/jydq.vue";
+import Copyright from "../components/copyright.vue";
 
 export default {
   name: "App",
   components: {
+    TopNav,
+    LogoAndSearch,
+    TopSwitchMenu,
+    LeftList,
+    Swiper,
+    RightContent,
+    Seckill,
+    Jydq,
+    Copyright
   },
 };
 </script>
