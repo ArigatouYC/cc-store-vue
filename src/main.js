@@ -3,6 +3,8 @@ import App from './App.vue'
 
 import Index from './pages/index'
 
+import "bootstrap";
+
 Vue.config.productionTip = false
 
 // new Vue({

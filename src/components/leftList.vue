@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import "animate.css";
 
 import HoverList from "./hoverList.vue";
 

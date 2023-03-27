@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import "animate.css";
 export default {
   neme: "hoverList",
 };
